@@ -103,7 +103,7 @@ void setup() {
   Serial.println("");
   Serial.println("WiFi connected");
 
-  // This function should set up the URL endpoint to access the webcam
+  // This function should set up the stream endpoint to access the camera stream
   startCameraServer();
 
 
