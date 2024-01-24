@@ -11,6 +11,7 @@
 const char* ssid = "**********";
 const char* password = "**********";
 
+// The entire code sets up a wwebserver on the ESP32
 void startCameraServer();
 void setupLedFlash(int pin);
 
@@ -102,9 +103,11 @@ void setup() {
   Serial.println("");
   Serial.println("WiFi connected");
 
+  // This function should set up the URL endpoint to access the webcam
   startCameraServer();
 
-  Serial.print("Camera Ready! Use 'http://");
+
+  Serial.print("Camera Ready! Use 'http://);
   Serial.print(WiFi.localIP());
   Serial.println("' to connect");
 }
